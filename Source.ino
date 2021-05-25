@@ -17,11 +17,11 @@ void setup()
 	Serial.begin(9600);
 	Serial.setTimeout(250);
 
-	batteryPack.SetLowBatteryHandler(onLowBattery);
-	batteryPack.SetNormalBatteryHandler(onNormalBattery);
+	battery.SetLowBatteryHandler(onLowBattery);
+	battery.SetNormalBatteryHandler(onNormalBattery);
 }
 
 void loop()
 {
-	batteryPack.Update();
+	battery.Update();
 }
