@@ -1,5 +1,3 @@
-//#define DBG_MODE
-
 #include "Battery.h"
 
 Battery battery(9, A0);
